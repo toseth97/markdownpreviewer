@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+$main__background:#87B5B5;
+$header__background: #4AA3A3;
+$preview__background:#C0D8D8;
+
+
+*{
+    width: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    
+}
+
+.App{
+    background-color: $main__background;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 5rem .5rem;
+    
+
+    .marker, .preview{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        box-shadow:  0 0 10px black;
+        
+        .label, .textarea{
+            width: 100% !important;
+            padding: .5rem 1rem;
+            border: 1px solid black;
+        }
+
+        .label{
+            background-color: $header__background;
+            letter-spacing: 2px;
+            font-size: 1.3rem;
+            
+        }
+
+        .textarea{
+            background-color: $preview__background;
+            min-height: 30vh;
+        }
+        .textarea:focus, .textarea:active{
+            border: 1px solid black;
+            outline: none;
+        }
+
+        @media screen and (max-width:700px){
+            width: 100%;
+        }
+    }
+
+    .preview{
+        margin-top: 2rem;
+        width: 60%;
+    }
+
+
+
+    
+
+    
+}
+
+
+
+
+
